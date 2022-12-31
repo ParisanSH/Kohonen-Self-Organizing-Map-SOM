@@ -1,4 +1,4 @@
-# Kohonen-Self-Organizing-Map-SOM-
+# Kohonen-Self-Organizing-Map-SOM
 In this mini project, I have tried to train and test a SOM network to do cluster analysis of news collection, from the BBC news website corresponding to stories in five topical areas from 2004-2005. The dataset is a collection of 2225 news documents, categorized into 5 classes ‘business’, ‘entertainment’, ‘politics’, ‘sport’, and ‘tech’.
 
 
@@ -9,7 +9,7 @@ SOM text clustering can be done in two main phases.
 The first phase is document preprocessing, which uses Vector Space Model (VSM) to generate a numeric vector for each text document. 
 In the next phase, SOM is applied on the document vectors to obtain document clusters.
 
-Phase 1: Document Preprocessing
+#Phase 1: Document Preprocessing
 
 By means of VSM, each document 𝑑𝑖 can be represented by an 𝑛-dimensional feature vector 𝒗𝑖 =< 𝑣𝑖1, … , 𝑣𝑖𝑛 >, where 𝑣𝑖𝑗 is a representation of term 𝑡𝑗 in document 𝑑𝑖 and 𝑛 is the number of distinct terms in the document collection 𝐷.
 
@@ -23,7 +23,7 @@ First, the ‘BBC-text.csv’ file read and for each document:
 3. Removing all stop words (e.g., ‘a’, ‘and’, ‘what’, …), given in file ‘stopwords.txt’.
 4. Computing the feature vector for each document, using the TF-IDF weighting scheme.
 
-Phase 2: SOM Clustering
+#Phase 2: SOM Clustering
 a) Winner-takes-all approach
 1. Using all documents to build a SOM with one neuron for each class.
 2. Depicting the SOM-hits plot.
